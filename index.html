@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <title>BMI Calculator</title>
+</head>
+
+<body class="w-screen h-screen bg-gradient-to-r from-blue-600 to-blue-300 flex justify-center items-center">
+  <div class="card w-[40%] h-auto bg-white rounded-2xl p-4 text-2xl">
+    <h2 class="text-5xl font-bold mb-4 text-center">BMI Calculator</h2>
+
+    <input id="weight" type="number" placeholder="Weight (kg)" class="w-full rounded-2xl bg-gray-200 p-4 mb-4">
+    <br>
+    <input id="height" type="number" placeholder="Height (cm)" class="w-full rounded-2xl bg-gray-200 p-4 mb-4">
+
+    <div>
+      <button id="calcBtn"
+        class="w-full rounded-2xl bg-gray-600 text-white text-2xl p-4 mb-4 hover:bg-gray-500">Calculate</button>
+      <button id="resetBtn"
+        class="w-full rounded-2xl bg-gray-600 text-white text-2xl p-4 mb-4 hover:bg-gray-500">Reset</button>
+    </div>
+
+    <div class="text-2xl text-center font-medium" id="result"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+
+</html>
